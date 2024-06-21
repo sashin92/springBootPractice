@@ -11,10 +11,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.github.sashin92.hellospring.DTO.MemberDTO;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
+import lombok.RequiredArgsConstructor;
+
 @RestController
 @RequestMapping("api/v1/get-api")
+@Tag(name = "User API", description = "이건 GET API들 입니다.")
 public class GetController {
-	
+
+	@Operation(summary = "인사", description = "정중히 인사드립니다.")
 	@GetMapping("/hello")
 	public String getHello() {
 		return "Hello World!";

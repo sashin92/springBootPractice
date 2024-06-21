@@ -21,7 +21,7 @@ public class PostController {
 		return "Hello World!";
 	}
 	
-	@PostMapping("/member")
+	@PostMapping("/request")
 	public String postRequest(@RequestBody Map<String, Object> postData) {
 		StringBuilder sb = new StringBuilder();
 		
@@ -29,9 +29,13 @@ public class PostController {
 			sb.append(node.getKey() + " : " + node.getValue() + "\n");
 		});
 		
-		return sb.toString();
-		
+		return sb.toString();		
 	}
 	
+	@PostMapping("/dto")
+	public String postDTO(@RequestBody MemberDTO memberDTO) {
+		
+		return memberDTO.toString();
+	}
 	
 }
