@@ -3,7 +3,7 @@ package com.github.sashin92.hellospring.controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.github.sashin92.hellospring.DTO.MemberDTO;
+import com.github.sashin92.hellospring.data.dto.MemberDTO;
 
 import java.util.Map;
 
