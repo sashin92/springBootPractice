@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: testProject
+  datasource:
+    url: jdbc:mysql://localhost:3306/himedia
+    username: himedia
+    password: himedia
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: true
+    show-sql: true
+    open-in-view:  true
+
